@@ -146,4 +146,4 @@ class Classifier(nn.Module):
         fft_out = self.fft(t_fft)
         t_in = torch.cat([raw_out, fft_out], dim=1)
         out = self.out(t_in)
-
+        return out
