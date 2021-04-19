@@ -6,7 +6,7 @@ import pywt
 
 
 class Quantiles(BaseEstimator, TransformerMixin):
-    def __init__(self, quantiles=[.50]):
+    def __init__(self, quantiles):
         self.quantiles = quantiles
 
     def get_quantiles(self, arr, quantiles):
